@@ -2,35 +2,26 @@
 
 ## What is Kubernetes?
 
-Kubernetes is an open source system for automating deployment, scaling, and management of containerized applications. 
-It is a project created to manage a cluster of Linux containers as a single system, managing and running Docker 
-container across multiple hosts, offering co-location of containers, service discovery, and replication control. 
-
 Kubernetes serves two purposes: It scales and starts containers across multiple Docker hosts, balancing the containers 
 across them. It also adds a higher level API to define how containers are logically grouped, allowing defining pools of 
-containers, loading balancing, and affinity. Kubernetes is defined by states, not processes. It builds upon 15 years of 
-experience of running production workload at Google, combined with the best of breed ideas and practices from the community 
-and it groups containers that make up an application into logical units for easy management and discovery.
+containers, loading balancing, and affinity. Kubernetes is defined by states, not processes.
 
-Kubernetes is considered more production ready and has its own concepts of pods which makes it a bit more complex than
- Docker Swarm while on the other hand, Swarm is more Docker native, using cmd similar to the regular Docker CLI commands.
- 
 [Source](http://www.zymr.com/docker-vs-kubernetes/)
 
 ## Main concepts
 
 ### Pods
 
-A Pod is the basic building block of Kubernetes–the smallest and simplest unit in the Kubernetes object model that you create or deploy. A Pod represents a running process on your cluster.
-
-### Deployments
-
-A Deployment provides declarative updates for Pods and Replica Sets. You only need to describe the desired state in a Deployment object, and the Deployment controller will change the actual state to the desired state at a controlled rate for you.
+A Pod represents a running process on your cluster.
 
 ### Services
 
-A Kubernetes Service is an abstraction which defines a logical set of Pods and a policy by which to access them - sometimes called a micro-service.
+A Service defines a logical set of Pods and a policy by which to access them.
+
+### Deployments
  
+A Deployment provides declarative updates for Pods. You only need to describe the desired state in a Deployment object, and the Deployment controller will change the actual state to the desired state for you.
+
 [Learn more](https://kubernetes.io/docs/concepts/)
 
 ## Prerequisites
